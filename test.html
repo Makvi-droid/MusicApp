@@ -6,11 +6,18 @@
     <title>TESTS</title>
 
     <style>
-      .navbar {
+      :root {
+        --fonts: "Outfit", "Mulish", "Inconsolata", "Quicksand", "Rubik",
+          "Roboto";
+      }
+      .navbar,
+      h3 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: sticky;
+        font-family: var(--fonts);
+        font-size: 1rem;
       }
 
       .navbar-ul {
@@ -23,6 +30,8 @@
       .navbar-a {
         text-decoration: none;
         color: black;
+        font-family: "Titillium Web", var(--fonts);
+        font-weight: bold;
       }
       .profile-link-content {
         gap: 8px;
