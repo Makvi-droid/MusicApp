@@ -10,14 +10,23 @@
         --fonts: "Outfit", "Mulish", "Inconsolata", "Quicksand", "Rubik",
           "Roboto";
       }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0d1117;
+      }
+
       .navbar,
       h3 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: sticky;
         font-family: var(--fonts);
-        font-size: 1rem;
+        font-size: clamp(1rem, 2vw + 1rem, 1.3rem);
+        background-color: #242424;
+        color: #e6af49;
       }
 
       .navbar-ul {
@@ -33,6 +42,7 @@
         font-family: "Titillium Web", var(--fonts);
         font-weight: bold;
         transition: 0.3s;
+        color: #e6af49;
       }
       .profile-link-content {
         gap: 8px;
@@ -42,7 +52,7 @@
 
       .navbar-a:hover {
         padding: 10px;
-        background-color: black;
+        background-color: #4f4f4f;
         color: whitesmoke;
         border-radius: 10px;
       }
