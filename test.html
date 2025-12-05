@@ -68,7 +68,16 @@
   <body>
     <div class="navbar">
       <h3>Music App</h3>
-      <ul class="navbar-ul">
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <i class="fas fa-bars menu-icon-open"></i>
+        <i class="fas fa-times menu-icon-close hidden"></i>
+      </button>
+      <ul class="navbar-ul" id="mobile-menu">
         <li class="navbar-li"><a href="" class="navbar-a">HOME</a></li>
         <li class="navbar-li"><a href="" class="navbar-a">PLAYLISTS</a></li>
         <li class="navbar-li"><a href="" class="navbar-a">LIKED SONGS</a></li>
